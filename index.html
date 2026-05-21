@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonic Boom Bar</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://datastudio.google.com/reporting/21c37ff9-34cc-4a20-92bd-3db352cb7a7e" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- BANNER -->
+ <header class="banner"></header>
+
+  <!-- DASHBOARD -->
+  <section class="section blue">
+    <div class="content reverse">
+
+      <div class="image-side">
+        <iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/21c37ff9-34cc-4a20-92bd-3db352cb7a7e/page/TwKwF"></iframe>
+      </div>
+
+      <div class="text-side">
+        <h2>Monitoramento em Tempo Real</h2>
+
+        <p>
+          O dashboard exibe os dados coletados pelo ESP32 durante o processo
+          de produção da cerveja, permitindo visualizar em tempo real a
+          estabilidade térmica do sistema.
+        </p>
+
+        <p>
+          O monitoramento contínuo garante maior precisão no controle da
+          mosturação e fervura, reduzindo oscilações de temperatura.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LEGENDA DO GRÁFICO -->
+  <section class="section red">
+    <div class="content">
+
+      <div class="text-side">
+        <h2>Interpretação dos Dados</h2>
+
+        <p>
+          O gráfico acompanha a evolução térmica do processo cervejeiro,
+          demonstrando como o sistema reage às variações de temperatura.
+        </p>
+
+        <p>
+          O controle ON-OFF com histerese permite estabilizar a faixa térmica,
+          evitando acionamentos excessivos do relé e aumentando a eficiência
+          do sistema.
+        </p>
+      </div>
+
+      <div class="image-side">
+        <img src="8.jpeg">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESUMO -->
+  <section class="section yellow">
+    <div class="content reverse">
+
+      <div class="image-side">
+        <img src="17.jpeg">
+      </div>
+
+      <div class="text-side">
+        <h2>Resumo do Projeto</h2>
+
+        <p>
+          O Sonic Boom Bar é um sistema automatizado desenvolvido para auxiliar
+          no controle térmico da produção artesanal de cerveja.
+        </p>
+
+        <p>
+          O projeto integra eletrônica, programação, IoT e automação,
+          utilizando um ESP32 como núcleo de processamento.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OBJETIVO -->
+  <section class="section dark">
+    <div class="content">
+
+      <div class="text-side">
+        <h2>Objetivos do Projeto</h2>
+
+        <ul>
+          <li>Automatizar o controle térmico da brassagem</li>
+          <li>Monitorar temperatura em tempo real</li>
+          <li>Garantir estabilidade térmica de ±0,5°C</li>
+          <li>Permitir acompanhamento remoto via Wi-Fi</li>
+          <li>Aplicar conceitos de IoT e sistemas embarcados</li>
+        </ul>
+      </div>
+
+      <div class="image-side">
+        <img src="11.jpeg">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CIRCUITO -->
+  <section class="section blue">
+    <div class="content reverse">
+
+      <div class="image-side">
+        <img src="9.jpeg">
+      </div>
+
+      <div class="text-side">
+        <h2>Funcionamento do Circuito</h2>
+
+        <p>
+          O sistema utiliza sensores DS18B20 para medir a temperatura do mosto,
+          enquanto o ESP32 processa os dados e aciona o módulo relé responsável
+          pelo aquecimento.
+        </p>
+
+        <p>
+          O controle ocorre através de lógica ON-OFF com histerese,
+          mantendo a temperatura dentro da faixa desejada.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RECEITA -->
+  <section class="section red">
+    <div class="content">
+
+      <div class="text-side">
+        <h2>Processo da Cerveja</h2>
+
+        <h3>Ingredientes</h3>
+
+        <ul>
+          <li>Malte Pilsen</li>
+          <li>Lúpulo</li>
+          <li>Levedura Lager</li>
+          <li>Água</li>
+        </ul>
+
+        <h3>Processo</h3>
+
+        <ol>
+          <li>Moagem do malte</li>
+          <li>Mosturação entre 62°C e 68°C</li>
+          <li>Filtragem do mosto</li>
+          <li>Fervura a aproximadamente 100°C</li>
+          <li>Resfriamento</li>
+          <li>Fermentação entre 8°C e 12°C</li>
+          <li>Maturação entre 0°C e 4°C</li>
+        </ol>
+      </div>
+
+      <div class="image-side">
+        <img src="3.jpeg">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="section yellow">
+  <h2 class="gallery-title">Galeria do Projeto</h2>
+
+  <div class="gallery">
+
+    <div class="card">
+      <img src="14.jpeg">
+      <p>Esquema eletrônico do circuito utilizando ESP32 e relé.</p>
+    </div>
+
+    <div class="card">
+      <img src="12.jpeg">
+      <p>Protótipo estrutural da caixa de proteção do sistema.</p>
+    </div>
+
+    <div class="card">
+      <img src="13.jpeg">
+      <p>Montagem inicial dos sensores e módulos eletrônicos.</p>
+    </div>
+
+    <div class="card">
+      <img src="4.jpeg">
+      <p>Processo de brassagem e controle térmico da mosturação.</p>
+    </div>
+
+    <div class="card">
+      <img src="2.jpeg">
+      <p>Testes de estabilidade térmica realizados com o ESP32.</p>
+    </div>
+
+    <div class="card">
+      <img src="8.jpeg">
+      <p>Dashboard de monitoramento em tempo real do sistema.</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <h2>Contato</h2>
+
+    <p>sonicboombar@placeholder.com</p>
+
+    <p>
+      Engenharia de Computação - Ciência e Tecnologia Aplicada I
+    </p>
+  </footer>
+
+</body>
+</html>
