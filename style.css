@@ -272,21 +272,27 @@ footer h2{
     height:55vh;
   }
 
-  /* TODAS AS SEÇÕES:
-     TEXTO EM CIMA
-     IMAGEM EMBAIXO */
+  /* força tudo igual no mobile */
 
   .content,
   .content.reverse{
-    flex-direction:column;
+    display:flex;
+    flex-direction:column !important;
     gap:25px;
   }
 
+  /* TEXTO PRIMEIRO */
+
   .text-side{
+    order:1;
     width:100%;
   }
 
+  /* IMAGEM SEMPRE DEPOIS */
+
   .image-side{
+    order:2;
+
     width:100%;
     max-width:100%;
     min-width:0;
@@ -335,7 +341,6 @@ footer h2{
     padding:50px 20px;
   }
 }
-
 /* ========================= */
 /* CELULARES PEQUENOS */
 /* ========================= */
