@@ -21,15 +21,18 @@ h1,h2,h3{
 
 .banner{
   width:100%;
-  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 
-  background:url("16.jpeg");
+  background:#000814;
+}
 
-  background-size:contain;
-  background-position:center;
-  background-repeat:no-repeat;
+.banner img{
+  width:100%;
+  height:auto;
 
-  background-color:#000;
+  display:block;
 }
 
 .banner-content{
@@ -167,7 +170,7 @@ h1,h2,h3{
 
 .blue{
   background:#2b5295;
-  color:#001a33;
+  color:#ffffff;
 }
 
 .red{
