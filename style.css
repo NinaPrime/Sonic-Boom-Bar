@@ -27,6 +27,7 @@ h1,h2,h3{
   align-items:center;
 
   overflow:hidden;
+  line-height:0;
 
   background:
     linear-gradient(
@@ -47,6 +48,7 @@ h1,h2,h3{
   height:auto;
 
   display:block;
+  vertical-align:bottom;
 }
 
 @media(min-width:1600px){
@@ -65,7 +67,7 @@ h1,h2,h3{
 }
 
 .banner-text h1{
-  font-size:7rem;
+  font-size:clamp(3rem, 8vw, 7rem);
   color:#fff27d;
   margin-bottom:30px;
 
@@ -78,7 +80,7 @@ h1,h2,h3{
   max-width:900px;
   margin:auto;
 
-  font-size:1.4rem;
+  font-size:clamp(1rem, 2vw, 1.4rem);
   line-height:2;
 }
 
@@ -105,6 +107,7 @@ h1,h2,h3{
 
 .text-side{
   flex:1;
+
   text-align:center;
 
   display:flex;
@@ -193,11 +196,12 @@ h1,h2,h3{
 
 .blue{
   background:#bdd7ff;
-  color:#000000;
+  color:#000;
 }
 
 .red{
   background:#bd0000;
+  color:white;
 }
 
 .yellow{
@@ -207,6 +211,7 @@ h1,h2,h3{
 
 .dark{
   background:#005497;
+  color:white;
 }
 
 /* ========================= */
@@ -216,7 +221,7 @@ h1,h2,h3{
 .gallery-title{
   text-align:center;
   margin-bottom:50px;
-  font-size:3rem;
+  font-size:clamp(2rem, 5vw, 3rem);
 }
 
 .gallery{
@@ -242,6 +247,7 @@ h1,h2,h3{
 .card p{
   margin-top:15px;
   line-height:1.6;
+  text-align:center;
 }
 
 /* ========================= */
@@ -272,16 +278,11 @@ footer h2{
     gap:30px;
   }
 
-  .banner{
-    height:70vh;
-  }
-
   .banner-text h1{
     font-size:4rem;
   }
 
   .banner-text p{
-    font-size:1.1rem;
     line-height:1.8;
   }
 
@@ -310,12 +311,6 @@ footer h2{
 
 @media(max-width:768px){
 
-  .banner{
-    height:55vh;
-  }
-
-  /* força tudo igual no mobile */
-
   .content,
   .content.reverse{
     display:flex;
@@ -323,14 +318,10 @@ footer h2{
     gap:25px;
   }
 
-  /* TEXTO PRIMEIRO */
-
   .text-side{
     order:1;
     width:100%;
   }
-
-  /* IMAGEM SEMPRE DEPOIS */
 
   .image-side{
     order:2;
@@ -353,7 +344,6 @@ footer h2{
 
   .text-side h2{
     font-size:1.5rem;
-    text-align:center;
   }
 
   .text-side h3{
@@ -361,10 +351,10 @@ footer h2{
   }
 
   .text-side p,
-.text-side li{
-  font-size:1rem;
-  line-height:1.8;
-}
+  .text-side li{
+    font-size:1rem;
+    line-height:1.8;
+  }
 
   .gallery{
     grid-template-columns:1fr;
@@ -383,24 +373,21 @@ footer h2{
     padding:50px 20px;
   }
 }
+
 /* ========================= */
 /* CELULARES PEQUENOS */
 /* ========================= */
 
 @media(max-width:480px){
 
-  .banner{
-    height:45vh;
-  }
-
   .text-side h2{
     font-size:1.4rem;
   }
 
   .text-side p,
-.text-side li{
-  font-size:1rem;
-}
+  .text-side li{
+    font-size:1rem;
+  }
 
   .gallery-title{
     font-size:1.6rem;
