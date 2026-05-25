@@ -169,21 +169,21 @@ h1,h2,h3{
 /* ========================= */
 
 .blue{
-  background:#2b5295;
-  color:#ffffff;
+  background:#bdd7ff;
+  color:#000000;
 }
 
 .red{
-  background:#bd0100;
+  background:#bd0000;
 }
 
 .yellow{
-  background:#f3b902;
+  background:#fff27d;
   color:#1f1f1f;
 }
 
 .dark{
-  background:#5084df;
+  background:#005497;
 }
 
 /* ========================= */
